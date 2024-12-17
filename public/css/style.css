@@ -54,7 +54,7 @@ h3 {
   grid-template-columns: 8fr 1fr 1fr 1fr 1fr;
   padding: 3rem;
   gap: 2rem;
-  justify-items: flex-start;
+  justify-content: flex-start;
   align-items: center;
   background-color: #fcf5eb;
 }
@@ -220,8 +220,15 @@ hr {
 }
 
 @media (max-width: 600px) {
+  .header-banner {
+    grid-template-columns: repeat(5, auto);
+    padding: 2rem;
+    gap: 1rem;
+    justify-content: space-between;
+  }
+
   body {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   header img {
@@ -319,7 +326,7 @@ hr {
 
 #resume-main {
   display: grid;
-  grid-template-columns: minmax(100px, 300px) minmax(300px, 900px);
+  grid-template-columns: minmax(80px, 300px) minmax(220px, 900px);
   grid-template-rows: auto;
   grid-template-areas:
     "top top"
