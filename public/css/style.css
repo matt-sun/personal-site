@@ -220,6 +220,38 @@ hr {
 }
 
 @media (max-width: 600px) {
+  body {
+    font-size: 1.2rem;
+  }
+
+  header img {
+    width: 20px;
+  }
+
+  footer img {
+    width: 20px;
+  }
+
+  h1 {
+    font-size: 2rem;
+    margin: 1rem 0rem;
+  }
+
+  .mega-title {
+    font-size: 4rem;
+    font-weight: 600;
+  }
+
+  h2 {
+    margin: 1rem 0rem;
+    font-size: 2rem;
+  }
+
+  h3 {
+    margin: 1rem 0rem;
+    font-size: 1.5rem;
+  }
+
   .contact-form {
     width: 100%;
     min-width: 0px;
@@ -334,8 +366,24 @@ hr {
   line-height: 2rem;
 }
 
+@media (max-width: 960px) {
+  #resume-main {
+    grid-template-areas:
+      "top top"
+      "sub-top sub-top"
+      "right right"
+      "bottom2 bottom2"
+      "bottom1 bottom1"
+      "left left";
+    gap: 1rem;
+    padding: 1rem 5%;
+  }
+}
+
 /* About Me specific CSS */
 #about-me-banner p {
+  text-align: justify;
+  padding: 0rem 2rem;
   margin-bottom: 4rem;
 }
 
@@ -405,7 +453,7 @@ hr {
 #dogs-section {
   background-color: #fcf5eb;
 }
-/* WHY IS IT NOT THE SAME SIZE AS THE OTHER SECTIONS, SAME FOR COOKING SECTION 1*/
+
 #dogs-section img {
   float: right;
   width: 20rem;
@@ -427,13 +475,17 @@ hr {
 
 @media (max-width: 540px) {
   .container {
-    padding: 3rem 2%;
+    padding: 1rem 2%;
+  }
+
+  #about-me-banner p {
+    margin-bottom: 2rem;
   }
 
   .info img {
     float: none !important;
-    width: 26rem !important;
-    height: 12rem !important;
+    width: 85% !important;
+    height: 10rem !important;
     object-fit: cover;
   }
 }
