@@ -1,0 +1,447 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: "Poiret One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5rem;
+  margin: 0px;
+  color: #5c564d;
+}
+
+main {
+  flex: 1;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container {
+  display: grid;
+  text-align: center;
+  padding: 3rem 20%;
+  justify-items: center;
+}
+
+h1 {
+  font-size: 4rem;
+  font-family: "Stick", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  margin: 2rem 0rem;
+}
+
+h2 {
+  margin: 2rem 0rem;
+  font-size: 3rem;
+}
+
+h3 {
+  margin: 2rem 0rem;
+  font-size: 2rem;
+  color: #86745a;
+}
+
+/* Mostly Index and all CSS*/
+#index-main p {
+  padding: 0rem 2rem;
+}
+
+.header-banner {
+  display: grid;
+  grid-template-columns: 8fr 1fr 1fr 1fr 1fr;
+  padding: 3rem;
+  gap: 2rem;
+  justify-items: flex-start;
+  align-items: center;
+  background-color: #fcf5eb;
+}
+
+li {
+  list-style: none;
+}
+
+.header-button {
+  color: #86745a;
+  text-decoration: none;
+}
+
+#hero-banner {
+  background-image: url(../assets/images/hero-banner.jpeg);
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.title h1 {
+  font-family: "Poiret One", sans-serif !important;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+}
+
+.mega-title {
+  font-size: 6rem;
+  font-family: "Stick", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+#hero .title {
+  margin: 0rem;
+}
+
+.center-photo > img {
+  height: 18rem;
+  width: 18rem;
+  border-radius: 50%;
+  margin: 2rem 0rem;
+  object-fit: cover;
+}
+
+#feature-banner {
+  background-color: rgb(255, 255, 255);
+}
+
+.contact-photo > img {
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  margin: 1rem 0rem;
+  object-fit: cover;
+}
+
+#contact-banner {
+  background-color: #fcf5eb;
+}
+
+.container-form {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem 0rem;
+  width: 80%;
+}
+
+.contact-form {
+  width: 80%;
+  min-width: 360px;
+  max-width: 720px;
+}
+
+.form-row {
+  display: flex;
+  padding: 1rem;
+  gap: 3rem;
+  justify-content: flex-start;
+}
+
+input {
+  padding: 0.5rem 0.5rem 0.5rem 0rem;
+  box-sizing: border-box;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid;
+  resize: none;
+  width: 100%;
+}
+
+#name {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-basis: 50%;
+}
+
+#email {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-basis: 50%;
+}
+
+#message {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-basis: 100%;
+}
+
+button[type="button"] {
+  border: none;
+  border-radius: 5px;
+  background-color: #db9f4b;
+  padding: 10px 50px;
+  margin: 20px 0px;
+}
+
+button > a {
+  font-family: "Poiret One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  text-decoration: none;
+  margin: 0px;
+  color: white;
+}
+
+.footer-banner {
+  display: grid;
+  padding: 3rem;
+  background-color: #86745a;
+}
+
+hr {
+  border: none;
+}
+
+@media (max-width: 1140px) {
+  .header-banner {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 2100px) and (max-width: 2599px) {
+  .container {
+    padding: 3rem 25%;
+  }
+}
+
+@media (min-width: 2600px) {
+  .container {
+    padding: 3rem 33%;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-form {
+    width: 100%;
+    min-width: 0px;
+  }
+
+  .form-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  #name {
+    width: 100%;
+  }
+
+  #email {
+    width: 100%;
+  }
+
+  #message {
+    width: 100%;
+  }
+}
+
+/* Work specific CSS */
+#work-main {
+  background-image: url(https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZXBudzBrN3JhbXAwb3MxaG1sY3Q2cHpiM2twazlyZG12NXZoYzlxciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/vGo2sgzeC8r60/giphy.webp);
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#work-main h1 {
+  color: #fcf5eb;
+}
+
+/* Resume specific CSS */
+#resume-title {
+  grid-area: top;
+}
+
+#summary {
+  grid-area: sub-top;
+}
+
+#skills {
+  grid-area: left;
+}
+
+#workxp {
+  grid-area: right;
+}
+
+#certif {
+  grid-area: bottom1;
+}
+
+#edu {
+  grid-area: bottom2;
+}
+
+#resume-main {
+  display: grid;
+  grid-template-columns: minmax(100px, 300px) minmax(300px, 900px);
+  grid-template-rows: auto;
+  grid-template-areas:
+    "top top"
+    "sub-top sub-top"
+    "left right"
+    "bottom1 bottom2";
+  gap: 4rem;
+  padding: 3rem 10%;
+}
+
+#resume-main .container {
+  padding: 0;
+  text-align: left;
+  justify-items: flex-start;
+}
+
+#resume-title-banner {
+  justify-content: center;
+}
+
+#resume-main .container h3 {
+  margin-top: 1rem;
+}
+
+#resume-main .container h4 {
+  margin: 0rem;
+}
+
+#resume-main .container h5 {
+  margin: 0px;
+  font-style: italic;
+}
+
+#resume-main .container p {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  text-align: justify;
+  line-height: 2rem;
+}
+
+#resume-main .container li {
+  margin-bottom: 1rem;
+  text-align: justify;
+  line-height: 2rem;
+}
+
+/* About Me specific CSS */
+#about-me-banner p {
+  margin-bottom: 4rem;
+}
+
+.info img {
+  padding: 0rem 2rem;
+  padding-bottom: 2rem;
+}
+
+.info p {
+  text-align: justify;
+  padding: 0rem 2rem;
+  padding-bottom: 2rem;
+  margin: 0rem;
+}
+
+#food-section {
+  background-color: #fcf5eb;
+}
+
+#cooking img {
+  float: left;
+  width: 9rem;
+}
+
+#eating img {
+  float: right;
+  width: 21rem;
+}
+
+#travels-section img {
+  float: left;
+  width: 16rem;
+  height: 12rem;
+  object-fit: cover;
+}
+
+#sports-section {
+  background-color: #fcf5eb;
+}
+
+#running img {
+  float: right;
+  width: 16rem;
+  height: 12rem;
+  object-fit: cover;
+}
+
+#climbing img {
+  float: left;
+  width: 16rem;
+  height: 16rem;
+  object-fit: cover;
+}
+
+#skiing img {
+  float: right;
+  width: 34rem;
+}
+
+#gaming-section img {
+  float: left;
+  width: 16rem;
+  height: 16rem;
+  object-fit: cover;
+}
+
+#dogs-section {
+  background-color: #fcf5eb;
+}
+/* WHY IS IT NOT THE SAME SIZE AS THE OTHER SECTIONS, SAME FOR COOKING SECTION 1*/
+#dogs-section img {
+  float: right;
+  width: 20rem;
+  height: 15rem;
+  object-fit: cover;
+}
+
+@media (min-width: 541px) and (max-width: 960px) {
+  .container {
+    padding: 3rem 5%;
+  }
+
+  .info img {
+    width: 16rem !important;
+    height: 16rem !important;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 540px) {
+  .container {
+    padding: 3rem 2%;
+  }
+
+  .info img {
+    float: none !important;
+    width: 26rem !important;
+    height: 12rem !important;
+    object-fit: cover;
+  }
+}
+
+/* Contact specific CSS */
+#contact-details-banner li {
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-style: normal;
+  padding: 1rem;
+}
